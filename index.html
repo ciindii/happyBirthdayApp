@@ -12,61 +12,19 @@
   <div class="row">
     <div class="form-group mt-5">
           <label for="exampleSelect1">Month:</label>
-          <select class="form-control col-sm" id="exampleSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-          </select>
+          <input type="text" placeholder="00" class="form-control col-sm" id="month"></input>
           <label for="exampleSelect1">Day:</label>
-          <select class="form-control col-sm" id="exampleSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-            <option>21</option>
-            <option>22</option>
-            <option>23</option>
-            <option>24</option>
-            <option>25</option>
-            <option>26</option>
-            <option>27</option>
-            <option>28</option>
-            <option>29</option>
-            <option>30</option>
-            <option>31</option>
-          </select>
+          <input type="text" Placeholder="00" class="form-control col-sm" id="day">
+          </input>
 
           <div class="form-group sm">
             <label class="col-form-label" for="inputDefault">Year:</label>
-            <input type="text" class="form-control" placeholder="year born" id="inputDefault">
+            <input type="text" class="form-control" placeholder="0000" id="year">
           </div>
-          <button type="submit" class="btn btn-primary mt-4">Submit</button>
+          <input type="button" value="Submit" onclick="insert()" class="btn btn-primary mt-4"></input>
     </div>
+       <div class="w-100"></div>
+    <div id="display" class="mt-5 row"></div>
   </div>
 </div>
   <script src="app.js"></script>
