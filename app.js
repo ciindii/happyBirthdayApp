@@ -21,7 +21,7 @@
 //
 // console.log(cindy.getSummary());
 
-
+//
 // function sayHappyBirthday(){
 //   let q = new Date();
 //   let month = q.getMonth();
@@ -32,6 +32,7 @@
 //   let date = new Date(month, day);
 //   if( date == Person){}
 // }
+
 let month  = [];
 let day   = [];
 let year = [];
@@ -48,7 +49,6 @@ function insert ( ) {
  year.push( yearInput.value );
 
  clearAndShow();
- calcYearsOld();
 }
 
 function clearAndShow () {
@@ -59,14 +59,19 @@ function clearAndShow () {
 
   // Show our output
   messageBox.innerHTML = "";
-  //
-  let q = new Date();
-  let m = q.getMonth();
-  let d = q.getDay();
-  let date = new Date(m, d);
-  if( m == month && d == day ){
-    messageBox = `Happy Birthday!`;
-  }else{
+
+  // let q = new Date();
+  // let m = q.getMonth();
+  // let d = q.getDay();
+  // let date = new Date(m, d);
+
+  var d = new Date();
+  if (
+    Number(document.getElementById("month").value) === (d.getMonth() + 1) &&
+    Number(document.getElementById("day").value) === d.getDate()
+  ) {
+    messageBox.innerHTML = `Happy Birthday!`;
+  } else {
     messageBox.innerHTML += `Your birthday is ${month}/${day}`;
   }
 }
